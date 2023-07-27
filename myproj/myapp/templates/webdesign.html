@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get Tutor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div style="background-color: rgb(117, 130, 230); margin-left: 600PX; margin-top: 300PX; margin-right: 600px;">
+        <form action = "" method = "POST"> <!-- Авторизация -->
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">email или логин</label>
+                <input type="text" placeholder="login"  class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp"><!-- ошибка 1не было атрибута name> -->
+                <div id="emailHelp" class="form-text">Введите имя пользователя или логин</div>
+            </div>
+            <div class="mb-3">
+                <label style="color: aqua;" for="exampleInputPassword1" class="form-label">Пароль</label>
+                <input type="password" placeholder="password    " class="form-control" name="psw" id="exampleInputPassword1"> <!-- ошибка 2не было атрибута name> -->
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Запомнить</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    {{x}}
+    {% for i in x %}
+    <h1>{{i}}</h1>
+    {% endfor %} 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
